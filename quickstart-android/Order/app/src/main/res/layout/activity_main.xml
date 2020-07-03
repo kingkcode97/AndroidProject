@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Dat mon an!"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Pizza"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/standard"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/AddPM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Click"
+                    android:text="Thêm Phô Mai" />
+
+                <CheckBox
+                    android:id="@+id/Add2PM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Click"
+                    android:text="Thêm x2 Phô Mai" />
+
+                <CheckBox
+                    android:id="@+id/Add3PM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Click"
+                    android:text="Thêm x3 Phô Mai" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/AddDeMong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:onClick="rbClick"
+                    android:text="Đế Mỏng" />
+
+                <RadioButton
+                    android:id="@+id/AddDeDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:onClick="rbClick"
+                    android:text="Đế Dày" />
+
+                <RadioButton
+                    android:id="@+id/AddDeTT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:onClick="rbClick"
+                    android:text="Đế Truyền Thống" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="So luong" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btMinusPz"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/gren"
+                        android:text="-"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtCountPz"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btPlusPz"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/red"
+                        android:text="+"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/CheckPM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="rbClick"
+                        android:text="Vien Pho Mai" />
+
+                    <RadioButton
+                        android:id="@+id/CheckSS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="rbClick"
+                        android:text="Vien xuc xich" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="HamBurger"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@color/standard"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/AddPMH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Click"
+                android:text="Them Pho Mai" />
+
+            <CheckBox
+                android:id="@+id/AddBeefH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Click"
+                android:text="Them thit bo" />
+
+            <CheckBox
+                android:id="@+id/AddEggH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Click"
+                android:text="Them trung op la" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="So luong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+
+                <Button
+                    android:id="@+id/btMinusH"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/gren"
+                    android:text="-"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtCountH"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btPlusH"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/red"
+                    android:text="+"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Banh mi"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:background="@color/standard"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/AddEggBM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="rbClick"
+                    android:checked="true"
+                    android:text="Banh mi op la" />
+
+                <RadioButton
+                    android:id="@+id/AddPMBM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="rbClick"
+                    android:text="Banh mi pho mai thit nguoi" />
+
+                <RadioButton
+                    android:id="@+id/AddFizzBM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="rbClick"
+                    android:text="Banh mi cha ca" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="So luong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+
+                <Button
+                    android:id="@+id/btMinusBM"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/gren"
+                    android:text="-"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtCountBM"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btPlusBM"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/red"
+                    android:text="+"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ma giam gia"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Giam gia: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtShowDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:gravity="right"
+            android:text="             "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Tong tien: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="0"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btOrder"
+            android:background="@drawable/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dat hang" />
+
+        <Button
+            android:id="@+id/btReset"
+            android:background="@drawable/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lam lai" />
+
+    </LinearLayout>
+
+</LinearLayout>

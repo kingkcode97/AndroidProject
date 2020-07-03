@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0099FF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XE Currency Converter : 1 USD to EUR = 0.884143 Euros"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/txtHeader"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:textColor="#273f66"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/editMoney"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="7dp"
+        >
+        <Spinner
+
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/sprinnerFrom"
+            android:entries="@array/money1"
+            android:background="#ffffff"
+            />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:background="@drawable/switchicon"
+            android:id="@+id/btnSwitch"/>
+        <Spinner
+
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/sprinnerTo"
+            android:entries="@array/money2"
+            android:background="#ffffff"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đổi"
+            android:id="@+id/btnConvert"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtConvertFrom"
+        android:layout_marginTop="40dp"
+        android:textSize="22dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="1 USD ="
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtConvertTo"
+        android:textSize="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="0.884143 EUR"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFooter1"
+        android:layout_marginTop="40dp"
+        android:textSize="19dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="1 EUR = 1.13104 USD"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFooter2"
+        android:textSize="19dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="1 USD = 0.884143 EUR"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Last updated: 2020-06-08 24:32utc"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:id="@+id/txtUpdate"
+        />
+
+
+
+
+</LinearLayout>

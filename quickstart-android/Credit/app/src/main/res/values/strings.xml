@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VayTieuDung</string>
+
+    <string-array name="laiXuat">
+        <item>16%</item>
+        <item>17%</item>
+        <item>18%</item>
+
+    </string-array>
+</resources>

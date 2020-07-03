@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Chuyen Doi Tien Te</string>
+    <string-array name="money1">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>VND</item>
+        <item>JPY</item>
+    </string-array>
+
+    <string-array name="money2">
+        <item>EUR</item>
+        <item>JPY</item>
+        <item>VND</item>
+        <item>USD</item>
+    </string-array>
+</resources>

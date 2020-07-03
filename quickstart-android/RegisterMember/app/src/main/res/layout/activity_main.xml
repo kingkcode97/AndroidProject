@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0066FF"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký Thành Viên"
+        android:textSize="25dp"
+        android:textColor="#fcfffd"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Họ tên:"
+                android:textColor="#fcfffd"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="20dp"
+                android:background="#fcfffd"
+                android:id="@+id/editFullName"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Username:"
+                android:textColor="#fcfffd"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="20dp"
+                android:background="#fcfffd"
+                android:id="@+id/editUsername"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Mật Khẩu:"
+                android:textColor="#fcfffd"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="20dp"
+                android:background="#fcfffd"
+                android:id="@+id/editPassword"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Ngày sinh:"
+                android:textColor="#fcfffd"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="20dp"
+                android:background="#fcfffd"
+                android:id="@+id/editBirthday" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Giới tính:"
+                android:textColor="#fcfffd"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:textColor="#F8F7F7"
+                    android:textSize="17dp"
+                    android:id="@+id/radioBoy"
+
+
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:textColor="#F8F7F7"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/radioGirl"
+
+                    />
+
+            </RadioGroup>
+
+
+        </TableRow>
+
+        <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Quốc Tịch:"
+                android:textColor="#fcfffd"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/spinerCountry"
+                android:entries="@array/quoctich"
+                android:background="#fcfffd"
+                />
+
+
+    </TableRow>
+
+
+    </TableLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tạo"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:id="@+id/btnCreate"
+        />
+
+</LinearLayout>

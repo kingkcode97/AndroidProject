@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dang ky thanh vien</string>
+    <string-array name="quoctich">
+        <item>Việt Nam</item>
+        <item>Mỹ</item>
+        <item>Anh</item>
+        <item>Nhật Bản</item>
+    </string-array>
+</resources>
